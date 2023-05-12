@@ -10,7 +10,7 @@
 <span id="simulation-time"></span>
 </div>
 
-``´HK_LED_bubblesort.cpp             Automata
+```HK_LED_bubblesort.cpp             Automata
 #include <Arduino.h>
 #include "FastLED.h"
 #define DATA_PIN 6
