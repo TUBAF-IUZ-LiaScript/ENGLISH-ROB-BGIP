@@ -24,7 +24,11 @@ which determines the random colors. Once the colors are filled in from the left 
 
 the mixed color is determined through average mixing. 
 
-Then the fill color fills the LEDs outwards from the middle and the LED strip resets once it's fully filled. Then the code will loop indefinetly.   
+Then the fill color fills the LEDs outwards from the middle and the LED strip resets once it's fully filled. Then the code will loop indefinetly.  
+
+## Video
+
+!?[video](https://youtu.be/PGe-OgqjDAM)
 
 ## Working simulation
 
