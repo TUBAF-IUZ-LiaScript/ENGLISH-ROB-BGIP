@@ -1,4 +1,4 @@
-[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/Kerbaltec-Solutions/Volcano-videos/main/videos.md)
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/Hannah-Kabisch/Englisch-ROB-BGIP/KK_LED_bubblesort/Bubblesort.md)
 # Bubblesort on a Strip of 12 LEDs
 ## The Programm
 1. It fills the strip randomly with 5 different colors
