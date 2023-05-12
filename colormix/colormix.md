@@ -1,14 +1,16 @@
 <!--
 
 author:   Björn Schnabel, Marvin Ohlmeyer
-email:    
+email:    bjoern.schnabel09@gmail.com
 version:  0.1.0
 language: EN
 narrator: US English Female Female
 
+import: https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
+
 -->
 
-[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.github.com/Kerbaltec-Solutions/ENGLISH-ROB-BGIP/colormix/colormix.md)
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/TUBAF-IUZ-LiaScript/ENGLISH-ROB-BGIP/blob/main/colormix/colormix.md) 
 
 # Colormixing on a adressable LED strip
 
