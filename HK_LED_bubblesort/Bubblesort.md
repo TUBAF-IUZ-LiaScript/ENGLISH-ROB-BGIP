@@ -1,4 +1,16 @@
-[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/Hannah-Kabisch/ENGLISCH-ROB-BGIP/main/HK_LED_bubblesort/Bubblesort.md)
+<!--
+
+author:   Hannah Kabisch
+version:  0.1.0
+language: EN
+narrator: US English Female Female
+
+import: https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
+
+-->
+
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/TUBAF-IUZ-LiaScript/ENGLISH-ROB-BGIP/blob/main/HK_LED_bubblesort/Bubblesort.md)
+
 # Bubblesort on a Strip of 12 LEDs
 ## The Programm
 1. It fills the strip randomly with 5 different colors
