@@ -19,7 +19,7 @@ import: https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
 
 ## The Code
 <div id="matrix-experiment">
-<wokwi-neopixel-matrix pin="6" cols="9" rows="1"></wokwi-neopixel-matrix>
+<wokwi-neopixel-matrix pin="6" cols="12" rows="1"></wokwi-neopixel-matrix>
 <span id="simulation-time"></span>
 </div>
 
