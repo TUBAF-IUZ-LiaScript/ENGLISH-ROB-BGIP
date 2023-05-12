@@ -71,3 +71,15 @@ void loop() {
 }
 ```
 @AVR8js.sketch(matrix-experiment)
+
+## Idea:
+1. use the LEDs in a fun way thats also educational
+2. visualize bubblesort
+3. use the potential of having multiple colors
+
+## further development:
+1. also implement other Sorting Algorithms (like quicksort) in the same way
+2. add more colors or LEDs
+3. use a matrix to also be able to use height to show the values (not only color)
+
+
