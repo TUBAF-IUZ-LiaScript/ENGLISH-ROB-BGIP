@@ -35,7 +35,7 @@ Then the fill color fills the LEDs outwards from the middle and the LED strip re
 ## Working simulation
 
 <div id="matrix-experiment">
-<wokwi-neopixel-matrix pin="6" cols="9" rows="1"></wokwi-neopixel-matrix>
+<wokwi-neopixel-matrix pin="6" cols="12" rows="1"></wokwi-neopixel-matrix>
 <span id="simulation-time"></span>
 </div>
 
