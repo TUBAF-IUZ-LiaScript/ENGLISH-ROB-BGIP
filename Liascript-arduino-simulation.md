@@ -6,6 +6,8 @@ version:  0.1.0
 language: EN
 narrator: US English Female Female
 
+import: https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
+
 -->
 
 # Simulation
@@ -13,7 +15,7 @@ narrator: US English Female Female
 ## Working simulation
 
 <div id="matrix-experiment">
-<wokwi-neopixel-matrix pin="6" cols="9" rows="1"></wokwi-neopixel-matrix>
+<wokwi-neopixel-matrix pin="6" cols="12" rows="1"></wokwi-neopixel-matrix>
 <span id="simulation-time"></span>
 </div>
 
