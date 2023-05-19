@@ -96,19 +96,27 @@ void loop() {
 
 # Colormixing on a adressable LED strip
 
-## Explanation
+## Questions
 
-The file colormix is a simple programm, that uses two different colors to create a mixed color. 
+### What do the lights do and how does the code work?
 
-The two colors are filled in from the left and the right side.
-The values of these colors are randomly chosen by random8, a function that creates pseudorandom 8bit values.
+The lights create a dynamic animation effect which changes every 1.5 seconds. Initially two random colors fill up the strip from each end. After that, the color that results from the average of the two fills the LED strip from the center towards the ends. This animation then repeats in a loop.
 
-These values are the hue in the HSV colorspectrum, 
-which determines the random colors. Once the colors are filled in from the left and the right side and they touch in the middle, 
+The script uses the FastLED library to control a strip of RGB LED lights. Constants define the LED data pin, brightness, and count. A CRGB array stores color data for each LED. In setup(), the strip is initialized and brightness is set.
+random_color() generates a random hue color using random8, which creates a pseudorandom 8bit value.
+fill_leds_simultaneously() fills the LED strip with the two colors, starting from the ends towards the center.
+average_mix() calculates the average of the two colors.
+fill_combined_color() fills the LED strip with the average color from the center outward.
+In loop(), the previous steps are looped and the strip is cleared at the end.
 
-the mixed color is determined through average mixing. 
+### What is the intention and how did you come up with the idea?
 
-Then the fill color fills the LEDs outwards from the middle and the LED strip resets once it's fully filled. Then the code will loop indefinetly.  
+The Intention was to showcase a dynamic and pleasing/soothing lighting effect using an LED strip. 
+
+### What could the light animation be used for and how could the idea be developed further?
+
+It can be used for visual art, decoration. With further development it could be used for visual feedback like music sync.
+Furthermore matching colorpaletts could be created, to always display colors that match.
 
 ## Video
 
