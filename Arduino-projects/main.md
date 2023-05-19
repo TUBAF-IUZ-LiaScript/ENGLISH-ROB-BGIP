@@ -188,24 +188,32 @@ void loop() {
 
 ## 2. Q&A
 
-What does our code do?
-- simulates loading bar that can go faster or slower randomly
-- last bit will take extra long
-- 70 percent chance that the loading process will fail and start over again (red lights)
+1.A What do the lights do?
+* simulate loading bar that can go faster or slower randomly
+* last pixel will take extra long
+* 70 percent chance that the loading process will fail and start over again (red lights)
 
-How does our code work?
-- set up fail variable as random number between 1 and 10 (will be different each loop)
-- for first 11 pixels, assign random speed value
-- add extra delay via "delay(4000);"
-- two different ending animations depending on the size of the fail variable
+1.B How does our code work?
+* set up fail variable as random number between 1 and 10 (will be different each loop)
+* for first 11 pixels, assign random speed value
+* add extra delay via "delay(4000);"
+* two different ending animations depending on the size of the fail variable
 
-How could it be used?
-- originally, no plan to use it; was made just for fun
-- could maybe be used to study people's behaviour when waiting for something
+2. What is the intention and how did we come up with the idea?
+* originally, no real intention, we just wanted something annoying
+* loading bar is one dimensional and would fit on LED stripe
 
-How could the program be upgraded?
-- increase code quality
-- not only make it random IF it's going to fail, but also WHEN it's going to fail
+3.A How could it be used?
+* originally, no plan to use it; was made just for fun
+* could maybe be used to study people's behaviour when waiting for something
+
+3.B How could the program be developed further?
+* increase code quality
+* not only make it random IF it's going to fail, but also WHEN it's going to fail
+
+4. Where did you get the coding knowledge from and what did we learn from this expierience?
+* got coding knowledge from past lectures and Guide on LiaScript
+* learned different ways to use a simple LED stripe
 
 ## 3. Simulation
 
