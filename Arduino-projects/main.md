@@ -325,7 +325,7 @@ Little Jimmy, 3rd grade Freiberg elementary school.
 ## Simulation
 -----
 <div id="matrix-experiment">
-<wokwi-neopixel-matrix pin="6" cols="9" rows="9"></wokwi-neopixel-matrix>
+<wokwi-neopixel-matrix pin="6" cols="12" rows="1"></wokwi-neopixel-matrix>
 <span id="simulation-time"></span>
 </div>
 
