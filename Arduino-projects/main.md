@@ -419,4 +419,191 @@ void loop() {
 
 
 ```
+
+# electromagnetic Lightenergy
+-------------
+## the idea of this program
+--------
+The idea is based on the LED strip itself. 
+It works with optical signals: light. Accordingly, we wanted to represent the physical view of light with the help of the LEDs. 
+## working with the idea
+--------
+https://bodell.mtchs.org/OnlineBio/BIOCD/text/chapter8/08images/08-05.gif
+
+Quite a substantial part of physics deals with the nature of light. While light is a part of everyones life, there are many other characteristics, 
+some which the human eye cannot make out at all!
+So, dealing with the mere visibility of light was not the purpose of this code and we decided to focus on another characteristic of light: 
+its electromagnetic energy and the corresponding wavelength: The visible light ranges from a wide variety of colors, 
+including some such as: red, orange, yellow, green, blue, cyan and violet. 
+Now, the wavelength ranges from 400 nm(violet) up to 700 nm(red), with shorter wavelengths having more energy. 
+We decided to visualize this with the speed of the LED Bar filling, 
+so that a shorter wavelength will fill the stripe much quicker than a longer wavelength.
+The LED-Stripe starts with the color red, the longest wavelength and the one, which will take the longest to fill the LED-Stripe due to our code. 
+In addition, the whole is summarized by white light. This symbolizes the totality of the lights and can be seen for the longest period of time before all the lights go out. Black, meaning the total absence of light, ends the code and serves as a clean finish. 
+**How could you develop the idea further?**
+One can more precisely determine the relationship between the speed of the colored light and the delay of the LEDs. 
+Before each colour, a sequence of black and white single LED's can be used to simulate the wavelength 
+(i.e. 3 LED lights turning white and black in sequency to simulate a low frequency wave, 1 LED light turning white and black in alternation to simulate a high frequency wave). 
+
+
+## showcasing the program 
+--------
+!?[bcd](https://cdn.discordapp.com/attachments/1092117701520015430/1110470527589552258/20230519_1159522.mp4)
+## Simulation
+-----
+<div id="matrix-experiment">
+<wokwi-neopixel-matrix pin="6" cols="12" rows="1"></wokwi-neopixel-matrix>
+<span id="simulation-time"></span>
+</div>
+```cpp             Automata
+#include "FastLED.h"
+#define DATA_PIN 6
+#define BRIGHTNESS 180
+#define NUM_LEDS 12
+int i = 0;
+
+CRGB leds[NUM_LEDS];
+
+void setup() {
+  FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
+  FastLED.setBrightness(BRIGHTNESS);
+}
+
+void loop() {
+for (i=0; i < NUM_LEDS-4; i++) 
+    {
+        for (int j = 0; j < 2; j++)
+         {        
+            leds[i] = CRGB::Red;  
+            FastLED.show(); 
+            delay(500);
+            leds[i] = CRGB::Black;
+            FastLED.show();
+            delay(500);            
+         }
+        leds[i] = CRGB::Red; 
+        FastLED.show();
+    }
+for (i=0; i < NUM_LEDS-4; i++) 
+    {
+        for (int j = 0; j < 2; j++)
+         {        
+            leds[i] = CRGB::Orange;  
+            FastLED.show(); 
+            delay(400);
+            leds[i] = CRGB::Black;
+            FastLED.show();
+            delay(400);            
+         }
+        leds[i] = CRGB::Orange; 
+        FastLED.show();
+    }
+for (i=0; i < NUM_LEDS-4; i++) 
+    {
+        for (int j = 0; j < 2; j++)
+         {        
+            leds[i] = CRGB::Yellow;  
+            FastLED.show(); 
+            delay(300);
+            leds[i] = CRGB::Black;
+            FastLED.show();
+            delay(300);            
+         }
+        leds[i] = CRGB::Yellow; 
+        FastLED.show();
+    }
+for (i=0; i < NUM_LEDS-4; i++) 
+    {
+        for (int j = 0; j < 2; j++)
+         {        
+            leds[i] = CRGB::Green;  
+            FastLED.show(); 
+            delay(200);
+            leds[i] = CRGB::Black;
+            FastLED.show();
+            delay(200);            
+         }
+        leds[i] = CRGB::Green; 
+        FastLED.show();
+    }
+for (i=0; i < NUM_LEDS-4; i++) 
+    {
+        for (int j = 0; j < 2; j++)
+         {        
+            leds[i] = CRGB::Blue;  
+            FastLED.show(); 
+            delay(100);
+            leds[i] = CRGB::Black;
+            FastLED.show();
+            delay(100);            
+         }
+        leds[i] = CRGB::Blue; 
+        FastLED.show();
+    }
+for (i=0; i < NUM_LEDS-4; i++) 
+    {
+        for (int j = 0; j < 2; j++)
+         {        
+            leds[i] = CRGB::Cyan;  
+            FastLED.show(); 
+            delay(50);
+            leds[i] = CRGB::Black;
+            FastLED.show();
+            delay(50);            
+         }
+        leds[i] = CRGB::Cyan; 
+        FastLED.show();
+    }for (i=0; i < NUM_LEDS-4; i++) 
+    {
+        for (int j = 0; j < 2; j++)
+         {        
+            leds[i] = CRGB::Violet;  
+            FastLED.show(); 
+            delay(25);
+            leds[i] = CRGB::Black;
+            FastLED.show();
+            delay(25);            
+         }
+        leds[i] = CRGB::Violet; 
+        FastLED.show();
+    }
+for (; i < NUM_LEDS; i++)
+      {
+         for (int j = 0; j < 2; j++)  
+          {         
+            leds[i] = CRGB::Black;
+             FastLED.show();
+             delay(0);
+             leds[i] = CRGB::Black;
+             FastLED.show();
+             delay(0);           
+          }
+         leds[i] = CRGB::Black; 
+         FastLED.show();
+         if(i==NUM_LEDS-4)
+         {
+           for (int n = 0; n < NUM_LEDS-4; n++)
+            {
+             leds[n] = CRGB::Black;
+             FastLED.show();
+            }
+         }
+         else if(i==NUM_LEDS-1)
+         {
+           for (int n = 0; n < NUM_LEDS; n++)
+             {
+               leds[n] = CRGB::White;
+               FastLED.show();
+             }
+            delay(10000);
+         }
+       }
+for (int j = 0; j < NUM_LEDS; j++)
+        { 
+         leds[j] = CRGB::Black;
+         FastLED.show();
+        }
+}
+
+
 @AVR8js.sketch(matrix-experiment)
