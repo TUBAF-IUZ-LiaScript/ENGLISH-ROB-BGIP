@@ -448,7 +448,7 @@ Before each colour, a sequence of black and white single LED's can be used to si
 
 ## showcasing the program 
 --------
-!?[bcd](https://cdn.discordapp.com/attachments/1092117701520015430/1110470527589552258/20230519_1159522.mp4)
+!?[example](https://cdn.discordapp.com/attachments/1092117701520015430/1110470527589552258/20230519_1159522.mp4)
 ## Simulation
 -----
 <div id="matrix-experiment">
@@ -604,6 +604,8 @@ for (int j = 0; j < NUM_LEDS; j++)
          FastLED.show();
         }
 }
+
+
 ```
 
 @AVR8js.sketch(matrix-experiment)
