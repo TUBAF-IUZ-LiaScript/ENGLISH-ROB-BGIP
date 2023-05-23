@@ -455,7 +455,9 @@ Before each colour, a sequence of black and white single LED's can be used to si
 <wokwi-neopixel-matrix pin="6" cols="12" rows="1"></wokwi-neopixel-matrix>
 <span id="simulation-time"></span>
 </div>
+
 ```cpp             Automata
+
 #include "FastLED.h"
 #define DATA_PIN 6
 #define BRIGHTNESS 180
@@ -604,7 +606,6 @@ for (int j = 0; j < NUM_LEDS; j++)
          FastLED.show();
         }
 }
-
 
 ```
 
