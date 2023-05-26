@@ -428,7 +428,7 @@ The idea is based on the LED strip itself.
 It works with optical signals: light. Accordingly, we wanted to represent the physical view of light with the help of the LEDs. 
 ## working with the idea
 --------
-https://bodell.mtchs.org/OnlineBio/BIOCD/text/chapter8/08images/08-05.gif
+![img](https://bodell.mtchs.org/OnlineBio/BIOCD/text/chapter8/08images/08-05.gif)
 
 Quite a substantial part of physics deals with the nature of light. While light is a part of everyones life, there are many other characteristics, 
 some which the human eye cannot make out at all!
